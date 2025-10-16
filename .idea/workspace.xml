@@ -10,26 +10,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21e279de-6ea8-4eea-a55d-59ba0f36b87b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Commande.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/LignesCommande.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Panier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Produit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/services/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/controller/ClientController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/services/ClientService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ma/fstt/controller/ClientController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ma/fstt/services/ClientService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Produit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Produit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/fstt/services/AbstractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/services/AbstractService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/entities/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/entities/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/entities/Produit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/entities/Produit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/fstt/entities/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/fstt/entities/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/fstt/entities/Produit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/fstt/entities/Produit.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -52,6 +55,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -82,7 +88,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Documents/LSI3/JEE/atelier2&quot;,
@@ -98,6 +104,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\Documents\LSI3\JEE\atelier2\src\main\webapp" />
+      <recent name="C:\Users\PC\Documents\LSI3\JEE\atelier2\src\main\webapp\home" />
+    </key>
+  </component>
   <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 38.0.0.Beta3">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ma.fstt.entities.Test" />
@@ -183,6 +195,18 @@
         </option>
       </method>
     </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Test" />
       <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 38.0.0.Beta3" />
@@ -214,11 +238,25 @@
       <workItem from="1760526073003" duration="6354000" />
       <workItem from="1760533699645" duration="161000" />
       <workItem from="1760533957681" duration="3205000" />
-      <workItem from="1760547872088" duration="4242000" />
+      <workItem from="1760547872088" duration="4494000" />
+      <workItem from="1760553755559" duration="2364000" />
+      <workItem from="1760604285421" duration="3992000" />
+      <workItem from="1760631300820" duration="5206000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ma/fstt/controller/ClientController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

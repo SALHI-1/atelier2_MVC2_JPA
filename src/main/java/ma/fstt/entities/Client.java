@@ -2,6 +2,7 @@ package ma.fstt.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 
 import java.util.List;
@@ -15,8 +16,11 @@ public class Client{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nom;
+/*
+    @Column(unique = true, nullable = false)
+*/
     private String email;
+
     private String motDePasse;
 
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL)
@@ -28,23 +32,30 @@ public class Client{
 
 
     // --- Méthodes métier ---
+/*
     public void seConnecter() {
         System.out.println(nom + " s'est connecté.");
     }
+*/
 
     public Client(String nom, String email, String motDePasse, List<Commande> commandes) {
-        this.nom = nom;
         this.email = email;
         this.motDePasse = motDePasse;
         this.commandes = commandes;
     }
+    public Client(Client c) {
+        this.id = c.id;
+        this.email = c.email;
+        this.motDePasse = c.motDePasse;
+    }
+
 
     public void consulterVitrine() {
-        System.out.println(nom + " consulte la vitrine.");
+        System.out.println(id + " consulte la vitrine.");
     }
 
     public void ajouterAuPanier(Produit p) {
-        System.out.println(nom + " ajoute " + p.getNom() + " au panier.");
+        System.out.println(id + " ajoute " + p.getNom() + " au panier.");
     }
 
 

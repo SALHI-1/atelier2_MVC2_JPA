@@ -19,6 +19,12 @@ public abstract class AbstractService <T>{
         em.persist(obj);
     }
 
+/*    public T findById(){
+
+
+
+        return ;
+    }*/
 //    public void findAll(){
 //
 //        em.find();

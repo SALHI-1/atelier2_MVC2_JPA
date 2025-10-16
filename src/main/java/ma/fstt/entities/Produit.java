@@ -1,5 +1,6 @@
 package ma.fstt.entities;
 
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,6 +10,8 @@ import javax.management.ConstructorParameters;
 @Entity
 @Getter
 @Setter
+
+@ApplicationScoped
 public class Produit {
 
     @Id
