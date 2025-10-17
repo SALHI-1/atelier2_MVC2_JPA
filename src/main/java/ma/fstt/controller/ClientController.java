@@ -22,8 +22,6 @@ public class ClientController extends HttpServlet {
     @EJB
     private ClientService cs;
 
-    @EJB
-    private ProduitService ps;
 
 protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 
@@ -41,13 +39,7 @@ protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IO
     if(client!=null){
 
         req.getSession().setAttribute("client", client);
-
-        // Charger les produits depuis le service
-        List<Produit> produits = ps.findAll(); // ou produitService.findAll()
-        System.out.println("la liste des produits : " + produits);
-        req.setAttribute("products", produits);
-
-        req.getRequestDispatcher("home.jsp").forward(req, res); // forward, pas redirect
+        res.sendRedirect(req.getContextPath() + "/home");
     }else{
 
         System.out.println("the else scope!!");

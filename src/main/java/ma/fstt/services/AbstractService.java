@@ -2,6 +2,7 @@ package ma.fstt.services;
 
 
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.NoResultException;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
 
@@ -34,6 +35,19 @@ public List<T> findAll() {
     return query.getResultList();
 }
 
+
+    public T findById(Long id) {
+        try {
+            TypedQuery<T> query = em.createQuery(
+                    "SELECT e FROM " + ec.getSimpleName() + " e WHERE e.id = :id",
+                    ec
+            );
+            query.setParameter("id", id);
+            return query.getSingleResult();
+        } catch (NoResultException e) {
+            return null; // aucun résultat trouvé
+        }
+    }
 
 
 

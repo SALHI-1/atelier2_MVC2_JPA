@@ -25,8 +25,8 @@ public class Panier {
         produits.put(produit, produits.getOrDefault(produit, 0) + qte);
     }
 
-    public void supprimerProduit(Produit produit) {
-        produits.remove(produit);
+    public void supprimerProduit(Long id) {
+        produits.remove(id);
     }
 
     public double calculerTotal() {

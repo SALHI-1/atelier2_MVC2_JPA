@@ -77,8 +77,9 @@
     <div class="product-card">
         <p><strong><%= p.getNom() %></strong></p>
         <p>Prix : <%= p.getPrix() %> DH</p>
-        <form action="AjouterPanierServlet" method="post">
-            <input type="hidden" name="produitId" value="<%= p.getId() %>"/>
+        <form action="panier" method="post">
+            <input type="hidden" name="productId" value="<%= p.getId() %>"/>
+            <input type="hidden" name="action" value="add" >
             <button type="submit" class="add-to-cart-btn">Ajouter au panier</button>
         </form>
     </div>

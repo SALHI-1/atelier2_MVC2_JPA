@@ -12,19 +12,18 @@ import ma.fstt.services.ProduitService;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/produit")
+@WebServlet("/home")
 
 public class ProductController extends HttpServlet {
 
     @EJB
     private ProduitService ps;
 
-    @EJB
-    private ProduitService produitService;
+
 
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException, ServletException {
-        List<Produit> produits = produitService.findAll();
-        req.setAttribute("produits", produits);
+        List<Produit> produits = ps.findAll();
+        req.setAttribute("products", produits);
         req.getRequestDispatcher("home.jsp").forward(req, res);
     }
 

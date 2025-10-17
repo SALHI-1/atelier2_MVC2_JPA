@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.management.ConstructorParameters;
+import java.util.Objects;
 
 @Entity
 @Getter
@@ -39,5 +40,18 @@ public class Produit {
         System.out.println(nom + " - " + prix + " DH (" + stock + " en stock)");
     }
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Produit)) return false;
+        Produit produit = (Produit) o;
+        return Objects.equals(id, produit.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 
 }
