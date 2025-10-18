@@ -1,13 +1,16 @@
 package ma.fstt.entities;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
 public class LignesCommande {
-    public LignesCommande(int quantite, double prixUnitaire, Produit produit, Commande commande) {
+    public LignesCommande(int quantite, Produit produit, Commande commande) {
         this.id = id;
         this.quantite = quantite;
-        this.prixUnitaire = prixUnitaire;
         this.produit = produit;
         this.commande = commande;
     }
@@ -17,7 +20,6 @@ public class LignesCommande {
     private Long id;
 
     private int quantite;
-    private double prixUnitaire;
 
     @ManyToOne
     @JoinColumn(name = "produit_id")
@@ -32,22 +34,13 @@ public class LignesCommande {
     public LignesCommande(Produit produit, int quantite) {
         this.produit = produit;
         this.quantite = quantite;
-        this.prixUnitaire = produit.getPrix();
     }
 
     public double getSousTotal() {
-        return prixUnitaire * quantite;
+        return produit.getPrix() * quantite;
     }
 
-    // Getters & Setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
 
-    public int getQuantite() { return quantite; }
-    public void setQuantite(int quantite) { this.quantite = quantite; }
-
-    public double getPrixUnitaire() { return prixUnitaire; }
-    public void setPrixUnitaire(double prixUnitaire) { this.prixUnitaire = prixUnitaire; }
 
     public Produit getProduit() { return produit; }
     public void setProduit(Produit produit) { this.produit = produit; }

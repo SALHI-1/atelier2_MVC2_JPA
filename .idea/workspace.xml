@@ -10,24 +10,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21e279de-6ea8-4eea-a55d-59ba0f36b87b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/panier.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/controller/CommandeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/services/CommandeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/services/LignesCommandeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commandes.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/header/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/fstt/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/controller/ClientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/fstt/controller/PanierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/controller/PanierController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/fstt/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Commande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Commande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/LignesCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/LignesCommande.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Panier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Panier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Produit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/entities/Produit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/fstt/services/AbstractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/fstt/services/AbstractService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/panier.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/panier.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/controller/ClientController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/controller/PanierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/controller/PanierController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/entities/Commande.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/entities/Commande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/entities/LignesCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/entities/LignesCommande.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/entities/Panier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/entities/Panier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/services/AbstractService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/services/AbstractService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/entities/Produit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/WEB-INF/classes/ma/fstt/entities/Produit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/panier.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/atelier2-1.0-SNAPSHOT/panier.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ma/fstt/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/fstt/controller/ClientController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/fstt/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/fstt/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/fstt/controller/PanierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/fstt/controller/PanierController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/fstt/entities/Commande.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/fstt/entities/Commande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/fstt/entities/LignesCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/fstt/entities/LignesCommande.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ma/fstt/entities/Panier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/fstt/entities/Panier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/fstt/services/AbstractService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/fstt/services/AbstractService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/fstt/entities/Produit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/fstt/entities/Produit.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +51,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="cdi.beans_4_0" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -228,7 +242,9 @@
       <workItem from="1760604285421" duration="3992000" />
       <workItem from="1760631300820" duration="5206000" />
       <workItem from="1760638242415" duration="6573000" />
-      <workItem from="1760729972582" duration="6176000" />
+      <workItem from="1760729972582" duration="6689000" />
+      <workItem from="1760740425590" duration="1637000" />
+      <workItem from="1760783347816" duration="16719000" />
     </task>
     <servers />
   </component>

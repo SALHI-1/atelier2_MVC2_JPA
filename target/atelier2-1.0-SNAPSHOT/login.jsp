@@ -21,7 +21,7 @@
 
                 const form = document.createElement("form");
                 form.method = "POST"
-                form.action = "login"
+                form.action = "client"
 
                 const inputEmail = document.createElement("input");
                 inputEmail.type = "hidden";
@@ -35,6 +35,13 @@
                 inputMDP.value = password
                 form.appendChild(inputMDP);
 
+                const action = document.createElement("input");
+                action.type = "hidden";
+                action.name = "action"
+                action.value = "login"
+                form.appendChild(action);
+
+
                 document.body.appendChild(form);
                 form.submit();
             } else {
@@ -47,12 +54,6 @@
 <body>
 
 
-<h1>
-    login page
-</h1>
 
-<% if (request.getAttribute("error") != null) { %>
-<p style="color:red;"><%= request.getAttribute("error") %></p>
-<% } %>
 </body>
 </html>

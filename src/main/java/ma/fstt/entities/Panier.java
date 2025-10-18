@@ -26,7 +26,13 @@ public class Panier {
     }
 
     public void supprimerProduit(Long id) {
-        produits.remove(id);
+        produits.entrySet().removeIf(entry -> entry.getKey().getId().equals(id));
+    }
+
+    public void viderPanier(){
+
+        produits.clear();
+
     }
 
     public double calculerTotal() {

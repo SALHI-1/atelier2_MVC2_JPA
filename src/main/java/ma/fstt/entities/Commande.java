@@ -42,6 +42,11 @@ public class Commande {
         System.out.println("Commande #" + id + " (" + statut + ")");
     }
 
+    public double getTotalePrix(){
+        if(lignesCommande==null || lignesCommande.isEmpty())return 0;
+        return lignesCommande.stream().mapToDouble(LignesCommande::getSousTotal).sum();
+
+    }
 
     public List<LignesCommande> getLignesCommande() { return lignesCommande; }
     public void setLignesCommande(List<LignesCommande> lignesCommande) { this.lignesCommande = lignesCommande; }

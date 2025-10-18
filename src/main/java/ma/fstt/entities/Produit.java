@@ -49,6 +49,8 @@ public class Produit {
         return Objects.equals(id, produit.id);
     }
 
+
+
     @Override
     public int hashCode() {
         return Objects.hash(id);
